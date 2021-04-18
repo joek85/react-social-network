@@ -55,7 +55,6 @@ class CardFeed extends Component {
                                 <div className="input-group me-2">
                                     <input style={{ borderBottomLeftRadius:25, borderBottomRightRadius: 25, borderTopLeftRadius: 25, borderTopRightRadius: 25}} type="text" placeholder="Add a comment..."  className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
                                 </div>
-                                {/*<button class="btn btn-outline-secondary btn-sm rounded-3" type="button" id="button-addon2">Add</button>*/}
                         </div>
                     </div>
                 </div>

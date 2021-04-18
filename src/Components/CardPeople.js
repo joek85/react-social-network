@@ -16,7 +16,6 @@ class CardPeople extends Component {
                         <ul className="list-unstyled my-1">{items}</ul>
                         <div className="dropdown-divider mb-1"/>
                         <button onClick={this.props.onClick} className="btn btn-outline-secondary btn-sm border-0">View more</button>
-                        {/*<a href="/" className="text-decoration-none text-secondary">View More</a>*/}
                     </div>
                 </div>
             </div>

@@ -17,7 +17,6 @@ class CardPeopleItems extends Component {
                     </div>
             </div>
         );
-
     }
 }
 

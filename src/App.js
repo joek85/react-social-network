@@ -31,15 +31,15 @@ function App() {
                             </div>
                         </div>
                         <a href="/userprofile" className="btn btn-outline-secondary btn-sm">View Profile</a>
-                        <div class="dropdown-header fw-bold text-start">Account</div>
-                        <a class="dropdown-item text-start" href="/">Settings & Privacy</a>
-                        <a class="dropdown-item text-start" href="/">Help</a>
-                        <a class="dropdown-item text-start" href="/">Language</a>
-                        <div class="dropdown-divider"/>
-                        <div class="dropdown-header fw-bold text-start">Manage</div>
-                        <a class="dropdown-item text-start" href="/">Posts & Activity</a>
-                        <div class="dropdown-divider"/>
-                        <a class="dropdown-item text-start" href="/">Logout</a>
+                        <div className="dropdown-header fw-bold text-start">Account</div>
+                        <a className="dropdown-item text-start" href="/">Settings & Privacy</a>
+                        <a className="dropdown-item text-start" href="/">Help</a>
+                        <a className="dropdown-item text-start" href="/">Language</a>
+                        <div className="dropdown-divider"/>
+                        <div className="dropdown-header fw-bold text-start">Manage</div>
+                        <a className="dropdown-item text-start" href="/">Posts & Activity</a>
+                        <div className="dropdown-divider"/>
+                        <a className="dropdown-item text-start" href="/">Logout</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,6 @@ function App() {
                 </Route>
             </Switch>
         </Router>
-
     </div>
   );
 }

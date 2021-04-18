@@ -3,7 +3,6 @@ import '../css/SocialMedia.css'
 import CardFeed from '../Components/CardFeed'
 class UserProfile extends Component {
     render() {
-        {/*<div className="jumbotron jumbotron-fluid" style={styles}/>*/}
         return (
             <div>
                 <div className="jumbotron jumbotron-fluid" style={styles}/>

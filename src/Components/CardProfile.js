@@ -20,8 +20,6 @@ class CardProfile extends Component {
                     <Link to="/userprofile">
                         <button onClick={this.props.onClick} className="btn btn-outline-secondary btn-sm border-0">View Profile</button>
                     </Link>
-
-                    {/*<a href="/" className="text-decoration-none text-secondary">View Profile</a>*/}
                 </div>
             </div>
         );
