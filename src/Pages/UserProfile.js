@@ -54,7 +54,6 @@ class UserProfile extends Component {
                                         <div className="card-title fw-bold">Portfolio</div>
                                         <div className="bi-images"/>
                                     </div>
-
                                     <div className="row row-cols-3 row-cols-md-3">
                                         <div className="col mb-2 p-1">
                                             <div className="card">
@@ -103,13 +102,10 @@ class UserProfile extends Component {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
         );
     }
