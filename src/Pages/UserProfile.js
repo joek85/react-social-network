@@ -3,13 +3,14 @@ import '../css/SocialMedia.css'
 import CardFeed from '../Components/CardFeed'
 class UserProfile extends Component {
     render() {
+        {/*<div className="jumbotron jumbotron-fluid" style={styles}/>*/}
         return (
             <div>
                 <div className="jumbotron jumbotron-fluid" style={styles}/>
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
-                            <div className="card text-center">
+                        <div className="col-lg-3">
+                            <div className="card border-0 text-center">
                                 <img src="https://picsum.photos/200" className=" rounded-circle align-self-center" alt="" style={{width: 128, height: 128, marginTop: -60, border: '4px solid #ffff'}}/>
                                 <div className="card-body">
                                     <div className="d-flex justify-content-center mb-4">
@@ -38,16 +39,16 @@ class UserProfile extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6">
-                                <div className="card border-0 mb-2">
-                                    <div className="card-body">
-                                        <div className="card-text">Joe Kaikaty</div>
-                                        <p className="card-subtitle text-muted">Web developer</p>
-                                    </div>
+                        <div className="col-lg-6">
+                            <div className="card border-0 mb-2">
+                                <div className="card-body">
+                                    <div className="card-text">Joe Kaikaty</div>
+                                    <p className="card-subtitle text-muted">Full Stack Developer</p>
                                 </div>
+                            </div>
                             <CardFeed/>
                         </div>
-                        <div className="col-3">
+                        <div className="col-lg-3">
                             <div className="card border-0">
                                 <div className="card-body">
                                     <div className="d-flex justify-content-between mb-4">
@@ -55,7 +56,7 @@ class UserProfile extends Component {
                                         <div className="bi-images"/>
                                     </div>
 
-                                    <div className="row row-cols-1 row-cols-md-3">
+                                    <div className="row row-cols-3 row-cols-md-3">
                                         <div className="col mb-2 p-1">
                                             <div className="card">
                                                 <img src="https://picsum.photos/200" className="card-img-top" alt="..."/>
@@ -109,6 +110,7 @@ class UserProfile extends Component {
                         </div>
                     </div>
                 </div>
+
             </div>
         );
     }

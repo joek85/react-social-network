@@ -10,7 +10,7 @@ class Home extends Component {
         return (
             <div className="row ">
                 <div className="col-lg-3">
-                    <CardProfile title={'Joe Kaikaty'} subTitle={'Web Developer'} onClick={onViewProfile}/>
+                    <CardProfile title={'Joe Kaikaty'} subTitle={'Full Stack Developer'} onClick={onViewProfile}/>
                 </div>
                 <div className="col-lg-6">
                     <CardPost/>

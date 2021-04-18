@@ -11,7 +11,7 @@ class CardRecommendations extends Component {
                 <div className="card border-0 text-center">
                     <div className="card-body">
                         <h5 className="card-title text-center">Recommended for you</h5>
-                        <div className="dropdown-divider "/>
+                        <div className="dropdown-divider mb-1"/>
                         <ul className="list-unstyled my-1">{items}</ul>
                         <div className="dropdown-divider mb-1"/>
                         <button onClick={this.props.onClick} className="btn btn-outline-secondary btn-sm border-0">View more</button>

@@ -19,13 +19,13 @@ class CardPost extends Component {
                     </div>
                     <div className="d-flex justify-content-between mt-2">
                         <button data-toggle="tooltip" data-placement="top" title="Upload images" className="btn btn-outline-secondary border-0">
-                            <i className="bi bi-image-fill me-2"/>Photo
+                            <i className="bi bi-image me-2"/>Photo
                         </button>
                         <button data-toggle="tooltip" data-placement="top" title="Upload videos" className="btn btn-outline-secondary border-0">
-                            <i className="bi bi-file-earmark-play-fill me-2"/>Video
+                            <i className="bi bi-file-earmark-play me-2"/>Video
                         </button>
                         <button data-toggle="tooltip" data-placement="top" title="Attach files" className="btn btn-outline-secondary border-0">
-                            <i className="bi bi-paperclip me-2"/>Attach files
+                            <i className="bi bi-file-earmark-arrow-up me-2"/>Attach files
                         </button>
                     </div>
                 </div>

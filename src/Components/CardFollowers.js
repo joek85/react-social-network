@@ -8,7 +8,7 @@ class CardFollowers extends Component {
             height:'72px',
         };
         return (
-            <div className="media d-flex pb-4 text-start">
+            <div className="media d-flex text-start my-4">
                 <img src={this.props.avatar} className="me-2" alt="" style={imgStyle}/>
                     <div className="media-body">
                         <h5 className="mt-0 fw-bold">{this.props.title}</h5>
