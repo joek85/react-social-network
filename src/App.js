@@ -5,9 +5,15 @@ import Register from './Pages/Register'
 import UserProfile from './Pages/UserProfile'
 import * as React from "react";
 import {
+    TransitionGroup,
+    CSSTransition
+} from "react-transition-group";
+import {
     BrowserRouter as Router,
     Switch,
     Route,
+    useLocation,
+    Redirect,
 } from "react-router-dom";
 function App() {
   return (
@@ -47,27 +53,33 @@ function App() {
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <div className="container">
-                        <Login/>
-                    </div>
+                    <Redirect to="/login" />
                 </Route>
-                <Route path="/register">
-                    <div className="container">
-                        <Register/>
-                    </div>
-                </Route>
-                <Route path="/feed">
-                    <div className="container">
-                        <Home/>
-                    </div>
-                </Route>
-                <Route path="/userprofile">
-                    <UserProfile/>
+                <Route path="*">
+                    <AnimationApp />
                 </Route>
             </Switch>
         </Router>
     </div>
   );
 }
-
+function AnimationApp() {
+    let location = useLocation();
+    return (
+            <TransitionGroup>
+                <CSSTransition
+                    key={location.key}
+                    classNames="fade"
+                    timeout={0}
+                >
+                    <Switch location={location}>
+                        <Route path="/login" children={<div className="container"><Login/></div>} />
+                        <Route path="/register" children={<div className="container"><Register/></div>} />
+                        <Route path="/feed" children={<div className="container"><Home/></div>} />
+                        <Route path="/userprofile" children={<UserProfile />} />
+                    </Switch>
+                </CSSTransition>
+            </TransitionGroup>
+    );
+}
 export default App;
